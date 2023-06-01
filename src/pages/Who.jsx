@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import {  Container, Section, Title } from "../components/common/styled";
-
+import  imgMe from "../assets/img/me-img.jpg"
+import  cv from "../assets/pdf/CV_ManuelaCepeda.pdf"
 import GitHubLogo from "../components/common/Icons/Github";
 import LinkedinLogo from "../components/common/Icons/Linkedin";
 import ArrowIcon from "../components/common/Icons/ArrowIcon";
@@ -124,7 +125,7 @@ const Who = () => {
         <Container  $flex  >
           <Left>
             <Mask>
-              <Img src="/img/me-img.jpg" />
+              <Img src={imgMe} />
             </Mask>
             <Icons>
             <a href="https://github.com/manuela-cepeda" target="_blank">
@@ -133,7 +134,7 @@ const Who = () => {
               <a href="https://github.com/manuela-cepeda" target="_blank">
                 <GitHubLogo width={16} />
               </a>
-              <a href="pdf/CV_ManuelaCepeda.pdf" target="_blank" >
+              <a href={cv} target="_blank" >
                Resume <ArrowIcon width={14} />
               </a>
               

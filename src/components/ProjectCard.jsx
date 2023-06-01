@@ -81,7 +81,7 @@ const ProjectCard = ({title, img, description, demo, github, tech }) => {
   return (
     
     <ProjectBox  >
-        <ProjectImg src={`/img/${img}`} alt="" />
+        <ProjectImg src={img} alt="" />
         <ProjectText>
             <h3 style={{"fontWeight":"500"}}>{title}</h3>
             <p>{description}</p>

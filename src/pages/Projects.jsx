@@ -2,6 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { Container, Section, Title } from "../components/common/styled";
 import ProjectCard from "../components/ProjectCard";
+import  boda from "../assets/img/boda-landing.png"
+import  carrito from "../assets/img/carrito-js.png"
+import  visor from "../assets/img/visor-3d.png"
+import  portfolio from "../assets/img/portfolio-landing.png"
+import  ecommerceNode from "../assets/img/ecommerce-node.png"
+import  ecommerceReact from "../assets/img/ecommerce-react.png"
+
+
 
 const Grid = styled.div`
   @media screen and (min-width: 768px) {
@@ -38,7 +46,7 @@ const Projects = () => {
       ],
       demo: "https://manuela-cepeda.github.io/3d-visor/#/homepage",
       github: "https://github.com/manuela-cepeda/3d-visor",
-      img: "visor-3d.png",
+      img: visor,
     },
     {
       title: "ECOTIENDA - CLIENT",
@@ -46,7 +54,7 @@ const Projects = () => {
       tech: ["Frontend", "ReactJS", "TailwindCSS"],
       demo: "https://manuela-cepeda.github.io/ecommerce-react/#/",
       github: "https://github.com/manuela-cepeda/ecommerce-react",
-      img: "ecommerce-react.png",
+      img: ecommerceReact,
     },
     {
       title: "ECOTIENDA - SERVER",
@@ -63,7 +71,7 @@ const Projects = () => {
         "Nodemailer",
       ],
       github: "https://github.com/manuela-cepeda/ecommerce-backend",
-      img: "ecommerce-node.png",
+      img: ecommerceNode,
     },
     {
       title: "LA PARADA POS",
@@ -71,7 +79,7 @@ const Projects = () => {
       tech: ["Frontend", "JS Vanilla", "HTML", "TailwindCSS"],
       demo: "https://manuela-cepeda.github.io/carrito-js/",
       github: "https://github.com/manuela-cepeda/carrito-js",
-      img: "carrito-js.png",
+      img: carrito,
     },
     {
       title: "BODA L&P",
@@ -79,7 +87,7 @@ const Projects = () => {
       tech: ["Frontend", "HTML", "CSS", "SASS"],
       demo: "https://manuela-cepeda.github.io/landing-boda-sass",
       github: "https://github.com/manuela-cepeda/landing-boda-sass",
-      img: "boda-landing.png",
+      img: boda,
     },
     {
       title: "PORTFOLIO",
@@ -87,7 +95,7 @@ const Projects = () => {
       tech: ["Frontend", "React", "Styled components", "Vite"],
       demo: "https://manuela-cepeda.github.io/landing-boda-sass",
       github: "https://github.com/manuela-cepeda/portfolioReact/tree/react-mini",
-      img: "portfolio-landing.png",
+      img: portfolio,
     }
   ];
 

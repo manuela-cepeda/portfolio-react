@@ -5,8 +5,8 @@ import Typed from "typed.js";
 import { Container, Section } from "../components/common/styled";
 import UseAnimations from "react-useanimations";
 import scrollDown from "react-useanimations/lib/scrollDown";
-import download from "react-useanimations/lib/download";
 import { Blob } from "../components/common/styled/Blob";
+import  imgMe from "../assets/img/me.png"
 
 const Left = styled.div`
   position: relative;
@@ -172,7 +172,7 @@ const Hero = () => {
 
         <Right>
           <Blob />
-          <Img src="/img/me.png" />
+          <Img src={imgMe} />
         </Right>
       </Container>
     </Section>
