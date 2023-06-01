@@ -7,13 +7,13 @@ export const Button  = styled.button`
     padding:7px 10px;
     font-weight:700 !important;
     background-color:transparent;
-    background-image: linear-gradient(to left, transparent 50%,  var(--second-color) 50%);
+    background-image: linear-gradient(to left, transparent 50%,  var(--main-color) 50%);
     background-size: 200%;
     background-repeat: no-repeat;
     background-position:right;
     font-weight:400;
-    color: var(--second-color);
-    border: 2px solid var(--second-color);
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
     border-radius:4px;
     cursor: pointer;
     transition: all .5s ease; 

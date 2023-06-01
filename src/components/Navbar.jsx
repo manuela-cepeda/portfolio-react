@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { Container } from './common/styled'
+import { Button, Container } from './common/styled'
+import  cv from "../assets/pdf/CV_ManuelaCepeda.pdf"
 
 
  
@@ -58,6 +59,16 @@ transition: background-size .3s;
 
 
 const Navbar = () => { 
+    const [matches, setMatches] = useState(
+        window.matchMedia("(min-width: 1000px)").matches
+      );
+    
+      useEffect(() => {
+        window
+          .matchMedia("(min-width:1000px)")
+          .addEventListener("change", (e) => setMatches(e.matches));
+      }, []);
+
   return (
    
         <Container  $navbar>           
@@ -79,6 +90,9 @@ const Navbar = () => {
                     <Link href="mailto:manulcepeda@gmail.com">Contact</Link>
                         </ListItem>
                 </List>
+               { matches && <Button>   <a href={cv} target="_blank" >
+               Resume
+              </a></Button>}
             </Links>
             
         </Container>

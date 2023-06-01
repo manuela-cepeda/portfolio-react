@@ -17,7 +17,7 @@ const Footer = styled.footer`
 
 const FooterComponent = () => {
   return <Footer>
-    <a href=""> Desing & Built by Manuela Cepeda</a>
+    <a href= "https://github.com/manuela-cepeda/portfolio-react"> Desing & Built by Manuela Cepeda</a>
    </Footer>;
 };
 

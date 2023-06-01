@@ -91,10 +91,9 @@ const Projects = () => {
     },
     {
       title: "PORTFOLIO",
-      description: "Landing page for my personal porfolio",
+      description: "This very same website, take a look under de hood",
       tech: ["Frontend", "React", "Styled components", "Vite"],
-      demo: "https://manuela-cepeda.github.io/landing-boda-sass",
-      github: "https://github.com/manuela-cepeda/portfolioReact/tree/react-mini",
+      github: "https://github.com/manuela-cepeda/portfolio-react",
       img: portfolio,
     }
   ];

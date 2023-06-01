@@ -44,8 +44,7 @@ const Icons = styled.div`
   cursor: pointer;
 
   & > a {
-    color: white;
-    text-decoration: none;
+  
     display:flex;
     align-items:center;
     font-weight:500;
