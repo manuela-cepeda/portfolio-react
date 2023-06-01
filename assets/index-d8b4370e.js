@@ -601,4 +601,4 @@ box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     display: none;
   } 
 }
-`;function App(){return jsx(Fragment,{children:jsxs(Container,{children:[jsx(Hero,{}),jsx(Who,{}),jsx(Projects,{}),jsx(FooterComponent,{})]})})}client.createRoot(document.getElementById("root")).render(jsx(App,{}));
+`;function App(){return jsx(Fragment,{children:jsxs(Container,{children:[jsx(Hero,{}),jsx(Who,{}),jsx(Projects,{}),jsx(FooterComponent,{})]})})}client.createRoot(document.getElementById("root")).render(jsx(React.StrictMode,{children:jsx(App,{})}));
