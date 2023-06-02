@@ -21,7 +21,13 @@ export const Section = styled.div`
   ${props => props.$heightauto && css`
   @media only screen and (max-width: 1000px) {
     height: auto;
-  }`
   }
+  @media only screen  and (orientation: landscape) {
+    height: auto;
+
+}
+  `
+  }
+
 
 `

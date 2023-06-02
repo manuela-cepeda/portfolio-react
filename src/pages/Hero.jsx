@@ -12,6 +12,10 @@ const Left = styled.div`
   position: relative;
   width: 80%;
   margin-top: 10rem;
+  @media only screen  and (orientation: landscape) {
+    margin-top:6rem;
+
+}
   @media screen and (min-width: 768px) {
     margin-top:0rem;
   }
@@ -94,6 +98,9 @@ const Intro = styled.h2`
   @media screen and (min-width: 768px) {
     height: 5rem;
   }
+  @media only screen  and (orientation: landscape) {
+   height:auto;
+}
 `;
 
 const Img = styled.img`
@@ -125,6 +132,10 @@ const Scroll = styled.div`
   display: flex;
   align-items: end;
   gap: 0.5rem;
+  margin-top:5rem;
+  @media only screen  and (orientation: landscape) {
+    margin-top:2rem;
+}
 `;
 
 const Hero = () => {
@@ -164,7 +175,6 @@ const Hero = () => {
               animation={scrollDown}
               size={20}
               strokeColor="currentColor"
-              wrapperStyle={{ marginTop: 100 }}
             />{" "}
             Scroll down ✨
           </Scroll>

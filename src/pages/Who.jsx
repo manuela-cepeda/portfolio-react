@@ -26,12 +26,14 @@ const Text = styled.div`
   span {
     font-family: "Nanum Pen Script", cursive;
     color:var(--slate-color);
-    font-size: 18px;
+    font-size: 16px;
   }
   @media screen and (min-width: 768px) {
     font-size: 13px;
     line-height:auto;
-
+    span{
+      font-size:18px;
+    }
   }
 `;
 
@@ -145,7 +147,7 @@ const Who = () => {
               <p>
                 {" "}
                 I am a 29 years old Front-End developer based in Rosario,
-                Argentina. My interest in sofware development started back when
+                Argentina. My interest in software development started back when
                 I used to work as an architect{" "}
                 <span>(the ones that design houses)</span> and I started making
                 my owns plugins with C# to automate and extend the capabilities
