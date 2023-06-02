@@ -140,7 +140,13 @@ Error generating stack: `+nt.message+`
   ${a=>a.$heightauto&&Ce`
   @media only screen and (max-width: 1000px) {
     height: auto;
-  }`}
+  }
+  @media only screen  and (orientation: landscape) {
+    height: auto;
+
+}
+  `}
+
 
 `,Title=styled.h2`
   color: white;
@@ -299,6 +305,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   position: relative;
   width: 80%;
   margin-top: 10rem;
+  @media only screen  and (orientation: landscape) {
+    margin-top:6rem;
+
+}
   @media screen and (min-width: 768px) {
     margin-top:0rem;
   }
@@ -374,6 +384,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   @media screen and (min-width: 768px) {
     height: 5rem;
   }
+  @media only screen  and (orientation: landscape) {
+   height:auto;
+}
 `,Img$1=styled.img`
   height: 300px;
   width: 300px;
@@ -402,7 +415,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   display: flex;
   align-items: end;
   gap: 0.5rem;
-`,Hero=()=>{const a=React.useRef(null);return React.useEffect(()=>{const o=new i(a.current,{strings:["smart","challenging","fun","interactive"],typeSpeed:100,backSpeed:100,startDelay:100,loop:!0});return()=>{o.destroy()}},[]),jsxs(Section,{$flexcolumn:!0,id:"home",children:[jsx(Navbar,{}),jsxs(Container$1,{$flex:!0,children:[jsxs(Left$1,{children:[jsxs(Name,{children:[jsx(Hi,{children:"👋🏻 "}),"Hi! I'm Manuela"]}),jsxs(Intro,{children:["I am a Front-End Developer. ",jsx("br",{}),"I love making ",jsx("span",{ref:a}),"things with code."]}),jsxs(Scroll,{children:[jsx(UseAnimations,{animation:scrollDown,size:20,strokeColor:"currentColor",wrapperStyle:{marginTop:100}})," ","Scroll down ✨"]})]}),jsxs(Right$1,{children:[jsx(Blob$1,{}),jsx(Img$1,{src:imgMe$1})]})]})]})},imgMe="/portfolio-react/assets/me-img-c565ed16.jpg",GitHubLogo=({width:a})=>jsxs("svg",{width:a,height:a,xmlns:"http://www.w3.org/2000/svg",role:"img",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",children:[jsx("title",{children:"GitHub"}),jsx("path",{d:"M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"})]}),LinkedinLogo=({width:a})=>jsxs("svg",{width:a,height:a,xmlns:"http://www.w3.org/2000/svg",role:"img",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",children:[jsx("title",{children:"LinkedIn"}),jsx("path",{d:"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"}),jsx("rect",{x:"2",y:"9",width:"4",height:"12"}),jsx("circle",{cx:"4",cy:"4",r:"2"})]}),ArrowIcon=({width:a})=>jsx("svg",{width:a,height:a,xmlns:"http://www.w3.org/2000/svg",role:"img",viewBox:"0 0 32 32",fill:"currentColor",stroke:"currentColor",strokeWidth:"2",children:jsx("path",{d:"m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z","data-name":"3-Arrow Right"})}),Left=styled.div`
+  margin-top:5rem;
+  @media only screen  and (orientation: landscape) {
+    margin-top:2rem;
+}
+`,Hero=()=>{const a=React.useRef(null);return React.useEffect(()=>{const o=new i(a.current,{strings:["smart","challenging","fun","interactive"],typeSpeed:100,backSpeed:100,startDelay:100,loop:!0});return()=>{o.destroy()}},[]),jsxs(Section,{$flexcolumn:!0,id:"home",children:[jsx(Navbar,{}),jsxs(Container$1,{$flex:!0,children:[jsxs(Left$1,{children:[jsxs(Name,{children:[jsx(Hi,{children:"👋🏻 "}),"Hi! I'm Manuela"]}),jsxs(Intro,{children:["I am a Front-End Developer. ",jsx("br",{}),"I love making ",jsx("span",{ref:a}),"things with code."]}),jsxs(Scroll,{children:[jsx(UseAnimations,{animation:scrollDown,size:20,strokeColor:"currentColor"})," ","Scroll down ✨"]})]}),jsxs(Right$1,{children:[jsx(Blob$1,{}),jsx(Img$1,{src:imgMe$1})]})]})]})},imgMe="/portfolio-react/assets/me-img-c565ed16.jpg",GitHubLogo=({width:a})=>jsxs("svg",{width:a,height:a,xmlns:"http://www.w3.org/2000/svg",role:"img",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",children:[jsx("title",{children:"GitHub"}),jsx("path",{d:"M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"})]}),LinkedinLogo=({width:a})=>jsxs("svg",{width:a,height:a,xmlns:"http://www.w3.org/2000/svg",role:"img",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",children:[jsx("title",{children:"LinkedIn"}),jsx("path",{d:"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"}),jsx("rect",{x:"2",y:"9",width:"4",height:"12"}),jsx("circle",{cx:"4",cy:"4",r:"2"})]}),ArrowIcon=({width:a})=>jsx("svg",{width:a,height:a,xmlns:"http://www.w3.org/2000/svg",role:"img",viewBox:"0 0 32 32",fill:"currentColor",stroke:"currentColor",strokeWidth:"2",children:jsx("path",{d:"m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z","data-name":"3-Arrow Right"})}),Left=styled.div`
   @media screen and (min-width: 768px) {
     flex: 1;
   }
@@ -417,12 +434,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   span {
     font-family: "Nanum Pen Script", cursive;
     color:var(--slate-color);
-    font-size: 18px;
+    font-size: 16px;
   }
   @media screen and (min-width: 768px) {
     font-size: 13px;
     line-height:auto;
-
+    span{
+      font-size:18px;
+    }
   }
 `,Icons=styled.div`
   display: flex;
@@ -488,7 +507,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   -webkit-columns: 2;
   -moz-columns: 2;
   list-style: none;
-`,Who=()=>{const[a,o]=reactExports.useState(window.matchMedia("(min-width: 768px)").matches);return reactExports.useEffect(()=>{window.matchMedia("(min-width: 768px)").addEventListener("change",et=>o(et.matches))},[]),jsx(Fragment,{children:jsxs(Section,{id:"who",$flexcolumn:!0,$heightauto:!0,children:[!a&&jsx(Title,{$center:!0,children:"ABOUT ME"}),jsxs(Container$1,{$flex:!0,children:[jsxs(Left,{children:[jsx(Mask,{children:jsx(Img,{src:imgMe})}),jsxs(Icons,{children:[jsx("a",{href:"https://github.com/manuela-cepeda",target:"_blank",children:jsx(LinkedinLogo,{width:16})}),jsx("a",{href:"https://github.com/manuela-cepeda",target:"_blank",children:jsx(GitHubLogo,{width:16})}),jsxs("a",{href:cv,target:"_blank",children:["Resume ",jsx(ArrowIcon,{width:14})]})]})]}),jsxs(Right,{children:[a&&jsx(Title,{$nomargin:!0,children:"ABOUT ME"}),jsxs(Text,{children:[jsxs("p",{children:[" ","I am a 29 years old Front-End developer based in Rosario, Argentina. My interest in sofware development started back when I used to work as an architect"," ",jsx("span",{children:"(the ones that design houses)"})," and I started making my owns plugins with C# to automate and extend the capabilities of diferent softwares ",jsx("span",{children:"(just for the fun of it)"}),"."," "]}),jsx("br",{}),jsxs("p",{children:[" ","Fast-forward to today, I’ve worked in different types of organizations ",jsxs("span",{children:[" ","(start-ups and large corporations)"," "]})," ","mostly as a React Developer."," "]}),jsx("br",{}),jsxs("p",{children:[" ","I am passionate about coding and solving problems through code, and I am excited to work alongside other amazing programmers and learn so much more!"," "]}),jsx("br",{}),jsxs("p",{children:[" ","💻 Here are a few technologies I’ve been working with recently:"," "]}),jsxs(List,{children:[jsx("li",{children:"✨ JavaScript (ES6+)"}),jsx("li",{children:"✨ TypeScript"}),jsx("li",{children:"✨ Sass "}),jsx("li",{children:"✨ React.js"}),jsx("li",{children:"✨ Express "}),jsx("li",{children:"✨ Node.js "}),jsx("li",{children:"✨ Mongo "}),jsx("li",{children:"✨ Firebase "})]})]})]})]})]})})},LinkIcon=({width:a})=>jsx("svg",{xmlns:"http://www.w3.org/2000/svg",width:a,height:a,fill:"white",viewBox:"0 0 24 24",children:jsx("path",{d:"M15.193 17.331l-4.909 4.91c-2.346 2.346-6.148 2.345-8.495 0-2.345-2.346-2.345-6.148 0-8.494l4.911-4.91 1.416 1.415-4.911 4.91c-1.56 1.562-1.56 4.102 0 5.663 1.562 1.561 4.102 1.561 5.663 0l4.91-4.91 1.415 1.416zm-1.415-15.572l-4.954 4.954 1.416 1.416 4.954-4.955c1.562-1.561 4.102-1.561 5.663 0s1.561 4.101 0 5.662l-4.955 4.955 1.417 1.416 4.955-4.955c2.344-2.345 2.344-6.148 0-8.494-2.347-2.345-6.15-2.344-8.496.001z"})}),TagIcon=({width:a})=>jsx("svg",{width:a,height:a,xmlns:"http://www.w3.org/2000/svg",fill:"white",viewBox:"0 0 24 24",children:jsx("path",{d:"M9.777 2l11.394 11.395-7.78 7.777-11.391-11.391v-7.781h7.777zm.828-2h-10.605v10.609l13.391 13.391 10.609-10.604-13.395-13.396zm-4.104 5c.4 0 .776.156 1.059.438.585.586.585 1.539.001 2.123-.285.283-.661.439-1.061.439s-.777-.156-1.06-.438c-.585-.586-.586-1.538-.001-2.123.284-.283.661-.439 1.062-.439zm0-1c-.641 0-1.28.244-1.769.732-.977.976-.977 2.558 0 3.536.489.488 1.128.732 1.768.732s1.279-.244 1.768-.733c.977-.977.977-2.558 0-3.537-.488-.486-1.127-.73-1.767-.73z"})}),ProjectBox=styled.div`
+`,Who=()=>{const[a,o]=reactExports.useState(window.matchMedia("(min-width: 768px)").matches);return reactExports.useEffect(()=>{window.matchMedia("(min-width: 768px)").addEventListener("change",et=>o(et.matches))},[]),jsx(Fragment,{children:jsxs(Section,{id:"who",$flexcolumn:!0,$heightauto:!0,children:[!a&&jsx(Title,{$center:!0,children:"ABOUT ME"}),jsxs(Container$1,{$flex:!0,children:[jsxs(Left,{children:[jsx(Mask,{children:jsx(Img,{src:imgMe})}),jsxs(Icons,{children:[jsx("a",{href:"https://github.com/manuela-cepeda",target:"_blank",children:jsx(LinkedinLogo,{width:16})}),jsx("a",{href:"https://github.com/manuela-cepeda",target:"_blank",children:jsx(GitHubLogo,{width:16})}),jsxs("a",{href:cv,target:"_blank",children:["Resume ",jsx(ArrowIcon,{width:14})]})]})]}),jsxs(Right,{children:[a&&jsx(Title,{$nomargin:!0,children:"ABOUT ME"}),jsxs(Text,{children:[jsxs("p",{children:[" ","I am a 29 years old Front-End developer based in Rosario, Argentina. My interest in software development started back when I used to work as an architect"," ",jsx("span",{children:"(the ones that design houses)"})," and I started making my owns plugins with C# to automate and extend the capabilities of diferent softwares ",jsx("span",{children:"(just for the fun of it)"}),"."," "]}),jsx("br",{}),jsxs("p",{children:[" ","Fast-forward to today, I’ve worked in different types of organizations ",jsxs("span",{children:[" ","(start-ups and large corporations)"," "]})," ","mostly as a React Developer."," "]}),jsx("br",{}),jsxs("p",{children:[" ","I am passionate about coding and solving problems through code, and I am excited to work alongside other amazing programmers and learn so much more!"," "]}),jsx("br",{}),jsxs("p",{children:[" ","💻 Here are a few technologies I’ve been working with recently:"," "]}),jsxs(List,{children:[jsx("li",{children:"✨ JavaScript (ES6+)"}),jsx("li",{children:"✨ TypeScript"}),jsx("li",{children:"✨ Sass "}),jsx("li",{children:"✨ React.js"}),jsx("li",{children:"✨ Express "}),jsx("li",{children:"✨ Node.js "}),jsx("li",{children:"✨ Mongo "}),jsx("li",{children:"✨ Firebase "})]})]})]})]})]})})},LinkIcon=({width:a})=>jsx("svg",{xmlns:"http://www.w3.org/2000/svg",width:a,height:a,fill:"white",viewBox:"0 0 24 24",children:jsx("path",{d:"M15.193 17.331l-4.909 4.91c-2.346 2.346-6.148 2.345-8.495 0-2.345-2.346-2.345-6.148 0-8.494l4.911-4.91 1.416 1.415-4.911 4.91c-1.56 1.562-1.56 4.102 0 5.663 1.562 1.561 4.102 1.561 5.663 0l4.91-4.91 1.415 1.416zm-1.415-15.572l-4.954 4.954 1.416 1.416 4.954-4.955c1.562-1.561 4.102-1.561 5.663 0s1.561 4.101 0 5.662l-4.955 4.955 1.417 1.416 4.955-4.955c2.344-2.345 2.344-6.148 0-8.494-2.347-2.345-6.15-2.344-8.496.001z"})}),TagIcon=({width:a})=>jsx("svg",{width:a,height:a,xmlns:"http://www.w3.org/2000/svg",fill:"white",viewBox:"0 0 24 24",children:jsx("path",{d:"M9.777 2l11.394 11.395-7.78 7.777-11.391-11.391v-7.781h7.777zm.828-2h-10.605v10.609l13.391 13.391 10.609-10.604-13.395-13.396zm-4.104 5c.4 0 .776.156 1.059.438.585.586.585 1.539.001 2.123-.285.283-.661.439-1.061.439s-.777-.156-1.06-.438c-.585-.586-.586-1.538-.001-2.123.284-.283.661-.439 1.062-.439zm0-1c-.641 0-1.28.244-1.769.732-.977.976-.977 2.558 0 3.536.489.488 1.128.732 1.768.732s1.279-.244 1.768-.733c.977-.977.977-2.558 0-3.537-.488-.486-1.127-.73-1.767-.73z"})}),ProjectBox=styled.div`
 box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     position:relative;
     border-radius:0.7em;
