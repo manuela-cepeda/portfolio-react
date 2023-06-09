@@ -121,7 +121,7 @@ const Who = () => {
 
   return (
     <>
-      <Section id="who" $flexcolumn $heightauto>
+      <Section id="who" $flexcolumn $heightauto >
         {!matches && <Title $center>ABOUT ME</Title>}
         <Container  $flex  >
           <Left>

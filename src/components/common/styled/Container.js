@@ -11,10 +11,14 @@ export const Container = styled.div`
     flex-direction:column;
     align-items:center;
     height: 100vh;
-  `
+    @media only screen and (max-width: 700px) {
+    height: auto;
   }
 
- 
+   `
+  }
+
+
 
   ${props => props.$navbar && css`
   backdrop-filter: blur(7px);

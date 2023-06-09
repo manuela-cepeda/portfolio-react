@@ -9,7 +9,7 @@ const Container = styled.div`
 
   --main-color:  #FA6759; 
   --second-color:  #6fdcbf;
-  --slate-color: #a8b2d1;
+  --slate-color:  #b5b4b4cc;
    --bg-color:  linear-gradient(180deg, hsla(208, 51%, 16%, 1) 0%, hsla(208, 48%, 26%, 1) 100%);
   color: white;
   background-image:  var(--bg-color);

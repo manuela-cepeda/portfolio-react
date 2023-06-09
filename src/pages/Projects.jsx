@@ -25,7 +25,7 @@ const Grid = styled.div`
 `;
 const Cursive = styled.p`
   font-family: "Nanum Pen Script", cursive;
-  color: #b5b4b4cc;
+  color: var( --slate-color);
   font-size: 18px;
   text-transform: lowercase;
   margin-top: 0.2rem;
