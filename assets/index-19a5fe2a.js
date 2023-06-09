@@ -75,9 +75,13 @@ Error generating stack: `+nt.message+`
     flex-direction:column;
     align-items:center;
     height: 100vh;
-  `}
+    @media only screen and (max-width: 700px) {
+    height: auto;
+  }
 
- 
+   `}
+
+
 
   ${a=>a.$navbar&&Ce`
   backdrop-filter: blur(7px);
@@ -586,7 +590,7 @@ box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
   }
 `,Cursive=styled.p`
   font-family: "Nanum Pen Script", cursive;
-  color: #b5b4b4cc;
+  color: var( --slate-color);
   font-size: 18px;
   text-transform: lowercase;
   margin-top: 0.2rem;
@@ -606,7 +610,7 @@ box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 
   --main-color:  #FA6759; 
   --second-color:  #6fdcbf;
-  --slate-color: #a8b2d1;
+  --slate-color:  #b5b4b4cc;
    --bg-color:  linear-gradient(180deg, hsla(208, 51%, 16%, 1) 0%, hsla(208, 48%, 26%, 1) 100%);
   color: white;
   background-image:  var(--bg-color);
