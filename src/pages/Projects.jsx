@@ -91,7 +91,7 @@ const Projects = () => {
     },
     {
       title: "PORTFOLIO",
-      description: "This very same website, take a look under de hood",
+      description: "This very same website, take a look under the hood",
       tech: ["Frontend", "React", "Styled components", "Vite"],
       github: "https://github.com/manuela-cepeda/portfolio-react",
       img: portfolio,
